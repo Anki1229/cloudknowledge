@@ -4,10 +4,10 @@ RUN apt-get update -y
 RUN apt-get install -y httpd \
  zip \
  unzip
- ADD https://www.free-css.com/free-css-templates/page13/lime-light.zip /var/www/html/
+ ADD https://www.free-css.com/assets/files/free-css-templates/download/page254/regna.zip /var/www/html/
  WORKDIR /var/www/html
- RUN unzip lime-light.zip
- RUN cp -rvf markups-lime-light/*.
- RUN rm -rf _MACOSX markups-lime-light lime-light.zip
+ RUN unzip regna.zip
+ RUN cp -rvf Regna/* .
+ RUN rm -rf Regna regna.zip
  CMD["/usr/sbin/httpd", "-D", "FOREGROUND"]
  EXPOSE 80
