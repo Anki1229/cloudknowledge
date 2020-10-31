@@ -1,6 +1,6 @@
 FROM centos:latest
 MAINTAINER ankitbhatia788@outlook.com
-RUN apt install  -y httpd \
+RUN yum install  -y httpd \
  zip \
  unzip
  ADD https://www.free-css.com/free-css-templates/page13/lime-light.zip /var/www/html/
