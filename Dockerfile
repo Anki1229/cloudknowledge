@@ -1,9 +1,6 @@
-FROM ubuntu:latest
+FROM centos:latest
 MAINTAINER ankitbhatia788@outlook.com
-RUN apt-get update -y
-RUN apt-get install -y httpd \
- zip \
- unzip
+RUN yum install -y httpd \ zip \ unzip
  ADD https://www.free-css.com/assets/files/free-css-templates/download/page254/regna.zip /var/www/html/
  WORKDIR /var/www/html
  RUN unzip regna.zip
