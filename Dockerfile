@@ -9,5 +9,5 @@ RUN apt-get install -y httpd \
  RUN unzip regna.zip
  RUN cp -rvf Regna/* .
  RUN rm -rf Regna regna.zip
- CMD["/usr/sbin/httpd", "-D", "FOREGROUND"]
+ CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
  EXPOSE 80
