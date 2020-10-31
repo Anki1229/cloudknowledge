@@ -8,5 +8,5 @@ RUN apt install  -y httpd \
  RUN unzip lime-light.zip
  RUN cp -rvf markups-lime-light/*.
  RUN rm -rf _MACOSX markups-lime-light lime-light.zip
- CMD["/usr/sbin/httpd", "D", "FOREGROUND"]
+ CMD["/usr/sbin/httpd", "-D", "FOREGROUND"]
  EXPOSE 80
